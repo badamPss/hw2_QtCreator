@@ -1,0 +1,90 @@
+/* Основной цвет фона */
+QMainWindow {
+    background-color: #2E1A47;
+}
+
+/* Стили для кнопок */
+QPushButton {
+    background-color: #4B0082;
+    color: #FFFFFF;
+    border: 1px solid #8A2BE2;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+QPushButton:hover {
+    background-color: #8A2BE2;
+    color: #FFFFFF;
+}
+
+QPushButton:pressed {
+    background-color: #9400D3;
+    color: #FFFFFF;
+}
+
+/* Стили для текстовых меток */
+QLabel {
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+/* Стили для текстового поля */
+QTextEdit {
+    background-color: #1E1029;
+    color: #FFFFFF;
+    border: 1px solid #8A2BE2;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* Стили для прогресс-бара */
+QProgressBar {
+    background-color: #1E1029;
+    color: #FFFFFF;
+    border: 1px solid #8A2BE2;
+    border-radius: 5px;
+    text-align: center;
+}
+
+QProgressBar::chunk {
+    background-color: #8A2BE2;
+    border-radius: 5px;
+}
+
+/* Стили для виджетов */
+QWidget {
+    background-color: #2E1A47;
+    color: #FFFFFF;
+}
+
+/* Стили для кнопок отмены и выхода (бордовый оттенок) */
+QPushButton#cancelButton, QPushButton#exitButton {
+    background-color: #800000; /* бордовый */
+    color: #FFFFFF;
+}
+
+QPushButton#cancelButton:hover, QPushButton#exitButton:hover {
+    background-color: #B22222; /* более светлый бордовый */
+    color: #FFFFFF;
+}
+
+QPushButton#cancelButton:pressed, QPushButton#exitButton:pressed {
+    background-color: #8B0000; /* темный бордовый */
+    color: #FFFFFF;
+}
+
+/* Стили для кнопки завершения */
+QPushButton#finishButton {
+    background-color: #006400;
+    color: #FFFFFF;
+}
+
+QPushButton#finishButton:hover {
+    background-color: #008000;
+    color: #FFFFFF;
+}
+
+QPushButton#finishButton:pressed {
+    background-color: #228B22;
+    color: #FFFFFF;
+}
