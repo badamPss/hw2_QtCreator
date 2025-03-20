@@ -23,3 +23,8 @@ void ResultsWindow::populateTable(const QVector<QPair<QString, qint64>>& largest
         ui->tableWidget->setItem(i, 1, new QTableWidgetItem(QString::number(largestFiles[i].second)));
     }
 }
+
+void ResultsWindow::on_exitButton_clicked()
+{
+    this->close();
+}

@@ -18,8 +18,8 @@
     <rect>
      <x>10</x>
      <y>10</y>
-     <width>380</width>
-     <height>250</height>
+     <width>371</width>
+     <height>201</height>
     </rect>
    </property>
    <column>
@@ -33,5 +33,20 @@
     </property>
    </column>
   </widget>
+  <widget class="QPushButton" name="exitButton">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>230</y>
+     <width>121</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Выход</string>
+   </property>
+  </widget>
  </widget>
+ <resources/>
+ <connections/>
 </ui>

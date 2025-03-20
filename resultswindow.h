@@ -16,6 +16,9 @@ public:
     explicit ResultsWindow(const QVector<QPair<QString, qint64>>& largestFiles, QWidget *parent = nullptr);
     ~ResultsWindow();
 
+private slots:
+    void on_exitButton_clicked();
+
 private:
     Ui::ResultsWindow *ui;
     void populateTable(const QVector<QPair<QString, qint64>>& largestFiles);

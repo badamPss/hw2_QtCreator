@@ -12,6 +12,7 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QHeaderView>
+#include <QtWidgets/QPushButton>
 #include <QtWidgets/QTableWidget>
 #include <QtWidgets/QWidget>
 
@@ -21,6 +22,7 @@ class Ui_ResultsWindow
 {
 public:
     QTableWidget *tableWidget;
+    QPushButton *exitButton;
 
     void setupUi(QWidget *ResultsWindow)
     {
@@ -35,7 +37,10 @@ public:
         QTableWidgetItem *__qtablewidgetitem1 = new QTableWidgetItem();
         tableWidget->setHorizontalHeaderItem(1, __qtablewidgetitem1);
         tableWidget->setObjectName("tableWidget");
-        tableWidget->setGeometry(QRect(10, 10, 380, 250));
+        tableWidget->setGeometry(QRect(10, 10, 371, 201));
+        exitButton = new QPushButton(ResultsWindow);
+        exitButton->setObjectName("exitButton");
+        exitButton->setGeometry(QRect(260, 230, 121, 51));
 
         retranslateUi(ResultsWindow);
 
@@ -49,6 +54,7 @@ public:
         ___qtablewidgetitem->setText(QCoreApplication::translate("ResultsWindow", "\320\244\320\260\320\271\320\273", nullptr));
         QTableWidgetItem *___qtablewidgetitem1 = tableWidget->horizontalHeaderItem(1);
         ___qtablewidgetitem1->setText(QCoreApplication::translate("ResultsWindow", "\320\240\320\260\320\267\320\274\320\265\321\200 (\320\261\320\260\320\271\321\202\321\213)", nullptr));
+        exitButton->setText(QCoreApplication::translate("ResultsWindow", "\320\222\321\213\321\205\320\276\320\264", nullptr));
     } // retranslateUi
 
 };
